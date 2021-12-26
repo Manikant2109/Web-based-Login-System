@@ -1,0 +1,25 @@
+<html>    
+<head><title>THE GREEN AURA</title><link rel="shortcut icon" href="favicon.ico" type="image/x-icon"></head>
+    <body>
+	<style>
+body {
+  background-image: url('img.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<h1><b><marquee><p style="color:white">!!   THE GREEN AURA   !!</p></marquee></b></h1>
+        <form action="register.jsp" >
+            <h1><p style="color:white"> New User Registration </p></h1>
+           <p style="color:white"> First Name        <input type="text" name="txtfname" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" required><br><br></p>
+           <p style="color:white">  Last Name      <input type="text" name="txtlname" onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" ><br><br></p>
+           <p style="color:white"> Email ID       <input type="email" name="txtemail" required><br><br></p>
+	   <p style="color:white"> Enter Password    <input type="password" name="txtPass1"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+  title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters" required><br><br></p>
+           <p style="color:white"> Confirm Password    <input type="password" name="txtPass2" required><br><br></p>
+           
+	   <input type="reset" > <input type="submit" value="REGISTER" >
+        </form>
+    </body>
+</html>
